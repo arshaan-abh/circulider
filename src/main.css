@@ -1,0 +1,40 @@
+.circulider {
+    height: 100%;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circulider img {
+    width: 100%;
+    height: 100%;
+}
+
+.circulider > * {
+    position: absolute;
+    width: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --image-opacity: 1;
+}
+
+.circulider > * > * {
+    filter: blur(calc(var(--image-opacity) * 1rem));
+}
+
+
+.circulider > *::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, calc(var(--image-opacity) * .25));
+}

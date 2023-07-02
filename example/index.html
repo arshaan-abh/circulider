@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circulider</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="../dist/circulider.js"></script>
+</head>
+<body>
+<header></header>
+<main>
+    <div id="circulider">
+        <div><img src="slides/1.jpg" alt="Slide 1"></div>
+        <div><img src="slides/2.jpg" alt="Slide 2"></div>
+        <div><img src="slides/3.jpg" alt="Slide 3"></div>
+        <div><img src="slides/4.jpg" alt="Slide 4"></div>
+        <div><img src="slides/5.jpg" alt="Slide 5"></div>
+        <div><img src="slides/6.jpg" alt="Slide 6"></div>
+        <div><img src="slides/7.jpg" alt="Slide 7"></div>
+        <div><img src="slides/8.jpg" alt="Slide 8"></div>
+    </div>
+</main>
+<footer>
+    Images by
+    <a href="https://www.freepik.com/free-vector/egyptian-hieroglyphics-background-with-flat-design_2720580.htm#query=ancient%20symbols&position=4&from_view=keyword&track=ais">Freepik</a>
+</footer>
+<script>
+    const circuliderElement = document.querySelector("#circulider");
+    const circulider = new Circulider(circuliderElement);
+</script>
+</body>
+</html>
